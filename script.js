@@ -45,7 +45,7 @@ const changeStates = (remainingAttempts, previousNumbers) => {
    }else if (previousNumbers.slice(-1) > computerGuessNumber) {
       message.textContent = "Your Guess is High 😮";
    } else if(previousNumbers.slice(-1) == computerGuessNumber){
-      message.textContent = "Hurray! You won the game 🥳";
+      message.textContent = `Hurray! You won this game in ${totalAttempts - remainingAttempts} attempts 🥳`;
       gameOver("won");
    }
    displayAttempts.textContent = remainingAttempts;
