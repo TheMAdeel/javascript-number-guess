@@ -55,6 +55,7 @@ body{
    outline: none;
    transition: .2s;
    box-shadow: 0 0 5px lightgray;
+   text-decoration: none;
 }
 .btn:hover{
    transform: scale(.9);
