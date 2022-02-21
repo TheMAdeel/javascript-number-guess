@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Guess Number game </title>
+
+   <!-- Custom CSS File -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+
+      <!-- Start Screen -->
+      <div class="startScreen box">
+         <h2>Guess a random number<br>between 1-100</h2>
+         <img src="img.jpg" alt="">
+         <p>Select Game Mode</p>
+         <div class="btns">
+            <button id="easy" class="btn">Easy <span>(10 Attempts)</span></button>
+            <button id="hard" class="btn">Hard <span>(5 Attempts)</span></button>
+         </div>
+      </div>
+
+      <!-- Game Screen -->
+      <div class="gameScreen box">
+
+         <button id="restart" class="btn">Restart Game</button>
+         <h2 id="message"></h2>
+         <input type="number" min="0" max="100" id="input">
+         <div class="history">
+            <p>
+               <span>Remaining Attempts: </span>
+               <Span id="attempts" class="span">-</Span>
+            </p>
+            <p>
+               <span>Previous Numbers: </span>
+               <Span id="previous_numbers" class="span">-</Span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
